@@ -6,7 +6,7 @@ import random
 def game_logic(guess, target):
     try: 
         if guess == target:
-            print("Congrats!! You guess the number!")
+            print(f"Congrats!! You guessed the number in {chances} trails")
             return True
         elif guess > target:
             print(f"The number is less than {guess}")
@@ -59,15 +59,15 @@ while chosen_diff == False:
 if chosen_diff == True:
     random_number: int = random.randint(1, 100)
 
-for chances in range(chances):
+for chances in range(1, chances + 1):
     user_guess: int = int(input("Make your guess: "))
     if game_logic(user_guess, random_number) == True:
         break
-    if diff_level == 1 and chances == 9:
+    if diff_level == 1 and chances == 10:
         print("Oh no. You have finished all your chances.")
-    elif diff_level == 2 and chances == 4:
+    elif diff_level == 2 and chances == 5:
         print("Oh no. You have finished all your chances.")
-    elif diff_level == 3 and chances == 2:
+    elif diff_level == 3 and chances == 3:  
         print("Oh no. You have finished all your chances.")
     
    
