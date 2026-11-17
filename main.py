@@ -63,5 +63,13 @@ for chances in range(chances):
     user_guess: int = int(input("Make your guess: "))
     if game_logic(user_guess, random_number) == True:
         break
+    if diff_level == 1 and chances == 9:
+        print("Oh no. You have finished all your chances.")
+    elif diff_level == 2 and chances == 4:
+        print("Oh no. You have finished all your chances.")
+    elif diff_level == 3 and chances == 2:
+        print("Oh no. You have finished all your chances.")
+    
+   
 
 
