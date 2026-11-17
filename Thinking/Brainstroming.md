@@ -17,3 +17,7 @@ here we will randomaly pick the number between 1 and 100 and make it invisble (w
 ## Task 4
 
 here we create the main game logic.
+
+## Task 5
+
+Here we create the chances
